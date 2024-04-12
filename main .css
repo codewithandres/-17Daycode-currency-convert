@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(228, 65%, 5%);
+    color: hsl(0, 0%, 100%);
+}
+
+.wrapper {
+    width: 370px;
+    background-color: hsl(225, 80%, 8%);
+    padding: 30px;
+    border-radius: 0.4em;
+}
+
+.wrapper header {
+    font-size: 1.6em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0.4em;
+}
+
+form p {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+form input {
+    border: 1px solid hsla(0, 0%, 60%, 0.733);
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1.1em;
+    transition: boder 0.4s linear;
+}
+
+form input:focus {
+    border: 2px solid hsl(216, 85%, 41%);
+    padding: 0 14px;
+}
+
+form .drop-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.form p,
+.to p {
+    font-size: 15px;
+}
+
+.drop-list .selected-box {
+    height: 40px;
+    display: flex;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    gap: 1em;
+    border: 1px solid hsl(0, 0%, 60%);
+}
+
+.selected-box select {
+    width: auto;
+}
+
+.selected-box img {
+    max-width: 30px;
+    border-radius: 1em;
+}
+
+.drop-list .ri-arrow-left-right-line {
+    cursor: pointer;
+    font-size: 1.7em;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+form,
+.exchange-rete {
+    font-size: 0.9em;
+    margin: 1.5em 0 2em;
+}
+
+form button {
+    height: 40px;
+    background-color: hsl(240, 85%, 5%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: background 0.3s linear;
+}
+
+form button:hover {
+    background-color: hsl(240, 87%, 9%);
+
+}
