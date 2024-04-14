@@ -6,7 +6,7 @@ const country = {
     "ANG": "AN",
     "AOA": "AO",
     "ARS": "AR",
-    "AUD": "AU",
+    "AUD": "Fw",
     "AWG": "AW",
     "AZN": "AZ",
     "BAM": "BA",
