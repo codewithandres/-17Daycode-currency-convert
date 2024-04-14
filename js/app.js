@@ -73,6 +73,7 @@ const getExchange = () => {
 
     fetch(curl).then(response => response.json()).then(result => {
 
+
         let excahngeRate = result.result.rate;
         let totalExchangeRate = (amountVla * excahngeRate).toFixed();
         exchangeeRateTxt.innerText = `${amountVla} ${fomCurency.value} = ${totalExchangeRate} ${toCurrency.value}`
