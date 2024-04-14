@@ -68,8 +68,7 @@ const getExchange = () => {
 
     const exchangeeRateTxt = document.querySelector('.exchange-rete');
     exchangeeRateTxt.innerText = 'convirtiendo....';
-    // const apiky = 'd473b731ba-3ee1fa0748-sbuza5';
-    // const  curl = `https://api.fastforex.io/fetch-all?api_key=${apiky}`
+
     const curl = ` https://api.fastforex.io/convert?to=${toCurrency.value}&amount= ${amountVla} &api_key=d473b731ba-3ee1fa0748-sbuza5`;
 
     fetch(curl).then(response => response.json()).then(result => {
@@ -80,4 +79,5 @@ const getExchange = () => {
     }).catch(() => {
         exchangeeRateTxt.innerText = 'Soometing went worng'
     });
+
 };
